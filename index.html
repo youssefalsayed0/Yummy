@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- lodding -->
+    <div id="lodding">
+      <span class="loader"></span>
+    </div>
+    <!-- nav bar -->
+    <div id="nav" class="min-vh-100">
+      <div class="navbar_hide_show min-vh-100">
+        <div class="navbar min-vh-100">
+          <div class="links">
+            <a
+              href="#search"
+              onclick="searchContact()"
+              class="position-relative"
+              >Search</a
+            >
+            <a href="#categories" onclick="category()" class="position-relative"
+              >Categories</a
+            >
+            <a href="#area" onclick="list('a')" class="position-relative"
+              >Area</a
+            >
+            <a href="#ingredients" onclick="list('i')" class="position-relative"
+              >Ingredients</a
+            >
+            <a href="#Contact Us" onclick="contact()" class="position-relative"
+              >Contact Us</a
+            >
+          </div>
+          <div class="contact">
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <p>
+              Copyright Â© 2019 All Rights<br />
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="open_nav min-vh-100">
+        <img src="images/logo.png" alt="amogy" />
+        <div class="icon_open_close">
+          <i class="fa-solid fa-bars open_close"></i>
+        </div>
+        <div class="d-flex flex-column">
+          <i class="fa-solid fa-globe py-3 fs-4"></i>
+          <i class="fa-solid fa-share-nodes fs-4"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..................................... -->
+
+    <!--main meal -->
+
+    <div id="main">
+    
+      <div class="container mx-auto">
+        <div class="row meal gy-4 py-5" id="mainItem">
+      
+
+        </div>
+      </div>
+      <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+         <span class="loader"></span>
+      </div>
+    
+    </div>
+
+    <!-- -------------------------------------------------- -->
+
+    <script src="./js/jquery-3.7.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
